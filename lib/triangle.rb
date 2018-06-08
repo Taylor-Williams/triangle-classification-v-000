@@ -15,7 +15,7 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-    elsif @angles[0] == @angles[1] == @angles[2]
+    elsif @angles[0] == @angles[1] && @angles[0] == @angles[2]
       @kind = "equilateral"
     elsif @angles[0] == @angles [1] || @angles[1] == @angles[2] || @angles[2] == @angles[0]
       @kind = "isosceles"
