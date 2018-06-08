@@ -3,7 +3,7 @@ class Triangle
   attr_accessor :angles, :kind
   def initialize(one, two, three)
     @angles = [one, two, three].sort
-    case angles
+    case @angles
     when @angles[0] == 0 || @angles[1] == 0 || @angles[2] == 0
       begin
         raise TriangleError
