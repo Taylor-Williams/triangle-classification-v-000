@@ -19,10 +19,10 @@ class Triangle
       @kind = :scalene
     end
   end
-end
-class TriangleError < StandardError
-  # triangle error code
-  def message
-    "must be a valid triangle"
+  class TriangleError < StandardError
+    # triangle error code
+    def message
+      "must be a valid triangle"
+    end
   end
 end
