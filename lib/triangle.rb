@@ -16,11 +16,11 @@ class Triangle
         puts error.message
       end
     elsif @angles[0] == @angles[1] && @angles[0] == @angles[2]
-      @kind = "equilateral"
+      @kind = :equilateral
     elsif @angles[0] == @angles [1] || @angles[1] == @angles[2] || @angles[2] == @angles[0]
-      @kind = "isosceles"
+      @kind = :isosceles
     else
-      @kind = "scalene"
+      @kind = :scalene
     end
   end
 end
