@@ -8,18 +8,21 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
-        puts TriangleError.message
+        puts error.message
       when @angles[0] >= @angles[1] + @angles[2]
         begin
           raise TriangleError
         rescue TriangleError => error
-          puts TriangleError.message
+          puts error.message
       when @angles[0] == @angles[1] == @angles[2]
         @kind = "equilateral"
-      when 
-        
+      when @angles[0] == @angles [1] || @angles[1] == @angles[2] || @angles[2] == @angles[0]
+        @kind = "isosceles"
+      else
+        @kind = "scalene"
+      end
     end
-      
+
     end
   end
 end
