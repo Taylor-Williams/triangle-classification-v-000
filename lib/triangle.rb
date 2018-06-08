@@ -4,11 +4,11 @@ class Triangle
   def initialize(one, two, three)
     @angles = [one, two, three].sort
     case @angles
-    when @angles[0] == 0 || @angles[1] == 0 || @angles[2] == 0
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
+      when @angles[0] == 0 || @angles[1] == 0 || @angles[2] == 0
+        begin
+          raise TriangleError
+        rescue TriangleError => error
+          puts error.message
       when @angles[0] >= @angles[1] + @angles[2]
         begin
           raise TriangleError
