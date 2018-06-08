@@ -22,8 +22,6 @@ class Triangle
         @kind = "scalene"
       end
     end
-
-    end
   end
 end
 class TriangleError < StandardError
